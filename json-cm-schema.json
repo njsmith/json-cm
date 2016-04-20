@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "JSON-CM (v0.1-DRAFT)",
+    "description": "A JSON schema for the JSON-CM spec",
+    "id": "https://github.com/njsmith/json-cm/schema/raw/master/json-cm-schema.json",
+
+    "type": "object",
+    "required": [
+        "content-type",
+        "name",
+        "license",
+        "usage-hints",
+        "colorspace",
+        "colors",
+        "domain"
+    ],
+    "additionalProperties": false,
+
+    "properties": {
+        "content-type": {
+            "type": "string",
+            "enum": ["application/vnd.matplotlib.colormap-v1+json"]
+        },
+        "name": {
+            "type": "string"
+        },
+        "license": {
+            "type": "string",
+            "format": "uri"
+        },
+        "usage-hints": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "description": {
+            "type": "string"
+        },
+        "credit": {
+            "type": "string"
+        },
+        "citations": {
+            "$ref": "https://github.com/citation-style-language/schema/raw/master/csl-data.json"
+        },
+
+        "colorspace": {
+            "type": "string",
+            "enum": ["sRGB"]
+        },
+        "colors": {
+            "type": "string",
+            "pattern": "^([0-9a-f]{6})+$"
+        },
+        "domain": {
+            "type": "string",
+            "enum": ["discrete", "continuous"]
+        },
+        "extensions": {
+            "type": "object"
+        }
+    }
+}

@@ -345,7 +345,9 @@ should either propose an addition to this specification or else use an
 
 ## JSON-Schema
 
-[TODO]
+Available [here](./json-cm-schema.json).
+
+(TODO: test it)
 
 
 ## History
