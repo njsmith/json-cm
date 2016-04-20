@@ -1,3 +1,6 @@
+# Nathaniel J. Smith <njs@pobox.com>
+# MIT licensed
+
 import zlib
 import base64
 
