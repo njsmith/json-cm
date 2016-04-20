@@ -51,14 +51,14 @@ def raw_deflate(data):
     assert dobj.decompress(compressed) + dobj.flush() == data
     return compressed
 
-print("viridis data JSON-CM        : {} bytes".format(len(viridis_jsoncm)))
 print("viridis data binary         : {} bytes".format(len(viridis_binary)))
 print("viridis data base64         : {} bytes".format(len(viridis_base64)))
-print("viridis data JSON-CM+DEFLATE: {} bytes"
-      .format(len(raw_deflate(viridis_jsoncm.encode("ascii")))))
+print("viridis data JSON-CM        : {} bytes".format(len(viridis_jsoncm)))
 print("viridis data binary+DEFLATE : {} bytes"
       .format(len(raw_deflate(viridis_binary))))
 print("viridis data base64+DEFLATE : {} bytes"
       .format(len(raw_deflate(viridis_base64))))
+print("viridis data JSON-CM+DEFLATE: {} bytes"
+      .format(len(raw_deflate(viridis_jsoncm.encode("ascii")))))
 
 #
