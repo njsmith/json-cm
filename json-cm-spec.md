@@ -11,13 +11,13 @@ Stability: It's a draft. Anything may change. ANYTHING.
 
 There's currently no standard interchange format for colormaps; every
 time you want to design a new colormap or use it to some new tool,
-then you have to write Yet Another Boring Conversion Script. (For
+then you have to write Yet Another Boring Conversion Script. For
 example, currently [ColorBrewer](http://colorbrewer2.org/) provides
 colormaps in 6 different formats, mostly ad hoc, and Peter Kovesi
 provides his colormaps in in
 [14 different vendor-specific formats](http://peterkovesi.com/projects/colourmaps/index.html)
 -- and yet this still doesn't include any formats that are supported
-by popular software like D3 or Matplotlib.)
+by popular software like D3 or Matplotlib.
 
 We propose the JSON Colormap (JSON-CM) format as a method for storing
 and interchanging colormaps between different systems.
@@ -328,6 +328,11 @@ JSON-CM writers MUST NOT use any top-level keys which are not
 specified above; if you find the above keys insufficient, then you
 should either propose an addition to this specification or else use an
 `"extension"` key.
+
+
+## JSON-Schema
+
+[TODO]
 
 
 ## History
