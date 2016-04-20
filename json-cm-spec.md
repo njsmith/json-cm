@@ -109,7 +109,7 @@ These keys give metadata about the colormap:
   check for and reject any file where this value is missing or
   different.
 
-  **`"name"`** (mandatory): A short string giving the name of this
+* **`"name"`** (mandatory): A short string giving the name of this
   colormap. For maximum interoperability, this SHOULD be a string of
   lowercase alphanumeric characters that starts with a alphabetic
   character and contains no spaces.
@@ -123,7 +123,7 @@ These keys give metadata about the colormap:
   that hint how this colormap is intended to be used. These tags are
   drawn from the following list:
 
-  * Colormap type:
+  * Colormap types:
     * `"sequential"`: indicates that this colormap is suitable for
       representing sequentially ordered data.
     * `"diverging"`: indicates that this colormap is suitable for
